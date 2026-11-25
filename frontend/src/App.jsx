@@ -84,6 +84,7 @@ export default function App() {
       ) : (
         <TodoList todos={todos} onToggle={handleToggle} onDelete={handleDelete} />
       )}
+	<footer>made by moshe belker</footer>
     </main>
   )
 }
