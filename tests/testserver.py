@@ -30,7 +30,7 @@ def main():
     for attempt in range(1, 31):
         try:
             status, body = try_create()
-            if status == 201 and body.get("title") == "Buy milk":
+            if status == 201 and body.get("title") == "Buy grocerise":
                 print("TEST PASSED:", body)
                 return 0
             print("TEST FAILED: unexpected response", status, body)
