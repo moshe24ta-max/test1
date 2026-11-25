@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react'
 import { todosApi } from './api/client.js'
 import AddTodo from './components/AddTodo.jsx'
@@ -83,6 +84,7 @@ export default function App() {
         <p className="muted">Loading…</p>
       ) : (
         <TodoList todos={todos} onToggle={handleToggle} onDelete={handleDelete} />
+	<footer>made by moshe belker</footer>
       )}
     </main>
   )
